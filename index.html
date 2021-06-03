@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title> 
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body> 
+    <header> 
+        <div id="timer">
+            Time: <span id="time">0</span>
+        </div>
+
+    </header>
+    <section id= "starting-screen" class= "show"> 
+        <div id= "starting-screen-style">
+            <h1> Coding Quiz</h1>
+                <p> Select the best answer for each question</p>
+                <button id="starting-button">Start!</button>
+        </div>
+    </section>
+
+    <section id= "quiz-screen" class="hide">
+        <container class="container" class="questions" id="questions"> 
+            <div id = "question-header"> 
+
+            </div>
+            <div id="choices">
+                
+            </div>
+        </container>
+    </section> 
+
+    <section id = "quiz-end" class = "hide"> 
+        <div id = "quiz-end-div">
+            <h2>Quiz Completed</h2> 
+            <h3> Score: <span id="score">0</span></h3> 
+            <button onclick="window.location.reload();" id="try-again-button">Try Again</button>
+        </div>
+    </section> 
+    <script src = "questions.js"></script> 
+    <script src = "highscores.js"></script> 
+    <script src = "script.js"></script>
+</body>
+</html>

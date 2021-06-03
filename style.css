@@ -1,0 +1,17 @@
+.container {
+
+} 
+.questions {
+    
+}  
+.hide {
+    display:none;
+} 
+.show{
+    display:block;
+}
+#starting-screen-style { 
+    text-align: center;
+    border: 5px; 
+    border-color: solid, black; 
+}
